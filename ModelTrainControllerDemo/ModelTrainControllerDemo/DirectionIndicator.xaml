@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="ModelTrainControllerDemo.DirectionIndicator"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModelTrainControllerDemo"
+             mc:Ignorable="d" 
+             d:DesignHeight="60
+             " d:DesignWidth="20">
+    <UniformGrid Columns="1" Rows="3">
+        <Rectangle x:Name="rectForward" HorizontalAlignment="Left" Height="Auto" Width="20">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rectNeutral" HorizontalAlignment="Left" Height="Auto" Width="20">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle x:Name="rectReverse" HorizontalAlignment="Left" Height="Auto" Width="20">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Rectangle.Fill>
+        </Rectangle>
+    </UniformGrid>
+</UserControl>

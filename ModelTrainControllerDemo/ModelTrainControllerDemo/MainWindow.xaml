@@ -1,0 +1,20 @@
+﻿<Window x:Class="ModelTrainControllerDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModelTrainControllerDemo"
+        mc:Ignorable="d"
+        Title="Train Controller Simulator" Height="350" Width="550" MinHeight="350" MinWidth="550">
+    <StackPanel VerticalAlignment="Center">
+        <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Center" >
+            <Label x:Name="speedLabel" Content="Speed" FontSize="36" Width="100" VerticalAlignment="Center" HorizontalContentAlignment="Right" ToolTip="Speed"/>
+            <ProgressBar x:Name="progressSpeed" Orientation="Vertical" Width="20" Foreground="DarkGray" ToolTip="Speed" BorderBrush="{x:Null}"/>
+            <Slider HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Margin="10,0" ValueChanged="PowerSliderValueChanged" ToolTip="Power"/>
+            <Slider HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Minimum="-1" Maximum="1" Margin="10,0" ValueChanged="ReverserSliderValueChanged" IsSnapToTickEnabled="True" ToolTip="Reverser"/>
+            <local:DirectionIndicator x:Name="directionIndicator" ToolTip="Direction"/>
+            <Slider x:Name="breakSlider" HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Maximum="4" Margin="10,0" IsSnapToTickEnabled="True" ValueChanged="BreakSliderValueChanged" ToolTip="Train Break"/>
+            <Label x:Name="breakLabel" Content="Full Service" FontSize="36" Width="200" VerticalAlignment="Center" HorizontalContentAlignment="Left" ToolTip="Train Break Status"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
