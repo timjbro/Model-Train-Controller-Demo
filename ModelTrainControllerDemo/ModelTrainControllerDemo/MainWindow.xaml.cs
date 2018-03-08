@@ -75,7 +75,7 @@ namespace ModelTrainControllerDemo
             {
                 case BreakStates.Release:
                     breakLabel.Content = "Release";
-                    breakLabel.Foreground = new SolidColorBrush(Colors.LightGray);
+                    breakLabel.Foreground = new SolidColorBrush(Colors.White);
                     break;
                 case BreakStates.On1:
                     breakLabel.Content = "1";

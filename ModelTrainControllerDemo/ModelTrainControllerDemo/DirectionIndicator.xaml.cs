@@ -13,7 +13,7 @@ namespace ModelTrainControllerDemo
     /// </summary>
     public partial class DirectionIndicator : UserControl
     {
-        Color offColor = Colors.LightGray;
+        Color offColor = Colors.Gray;
         Color onColor = Colors.Orange;
 
         ColorAnimation flashColour;

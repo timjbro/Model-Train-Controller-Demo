@@ -5,16 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ModelTrainControllerDemo"
         mc:Ignorable="d"
-        Title="Train Controller Simulator" Height="350" Width="550" MinHeight="350" MinWidth="550">
-    <StackPanel VerticalAlignment="Center">
-        <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Label x:Name="speedLabel" Content="Speed" FontSize="36" Width="100" VerticalAlignment="Center" HorizontalContentAlignment="Right" ToolTip="Speed"/>
-            <ProgressBar x:Name="progressSpeed" Orientation="Vertical" Width="20" Foreground="DarkGray" ToolTip="Speed" BorderBrush="{x:Null}"/>
-            <Slider HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Margin="10,0" ValueChanged="PowerSliderValueChanged" ToolTip="Power"/>
-            <Slider HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Minimum="-1" Maximum="1" Margin="10,0" ValueChanged="ReverserSliderValueChanged" IsSnapToTickEnabled="True" ToolTip="Reverser"/>
-            <local:DirectionIndicator x:Name="directionIndicator" ToolTip="Direction"/>
-            <Slider x:Name="breakSlider" HorizontalAlignment="Left"  VerticalAlignment="Top" Orientation="Vertical" Height="300" SmallChange="1" TickPlacement="Both" Maximum="4" Margin="10,0" IsSnapToTickEnabled="True" ValueChanged="BreakSliderValueChanged" ToolTip="Train Break"/>
-            <Label x:Name="breakLabel" Content="Full Service" FontSize="36" Width="200" VerticalAlignment="Center" HorizontalContentAlignment="Left" ToolTip="Train Break Status"/>
-        </StackPanel>
+        Title="Model Train Controller (Demo)" Width="1280" Height="720" MinWidth="1280" MinHeight="720" Background="DarkGray">
+    <StackPanel Margin="10" Orientation="Horizontal" HorizontalAlignment="Center" >
+        <Label x:Name="speedLabel" Content="Speed" FontSize="72" Width="400" VerticalAlignment="Center" HorizontalContentAlignment="Right" ToolTip="Speed" FontFamily="Segoe UI Semibold" Foreground="White"/>
+        <ProgressBar x:Name="progressSpeed" Orientation="Vertical" Background="Gray" Foreground="Orange" ToolTip="Speed" BorderBrush="{x:Null}" Width="100"/>
+        <Slider HorizontalAlignment="Left" Orientation="Vertical" SmallChange="1" TickPlacement="Both" Margin="10,0" ValueChanged="PowerSliderValueChanged" ToolTip="Power"/>
+        <Slider HorizontalAlignment="Left" Orientation="Vertical" SmallChange="1" TickPlacement="Both" Minimum="-1" Maximum="1" Margin="10,0" ValueChanged="ReverserSliderValueChanged" IsSnapToTickEnabled="True" ToolTip="Reverser"/>
+        <local:DirectionIndicator Width="100" x:Name="directionIndicator" ToolTip="Direction"/>
+        <Slider x:Name="breakSlider" HorizontalAlignment="Left"  Orientation="Vertical" SmallChange="1" TickPlacement="Both" Maximum="4" Margin="10,0" IsSnapToTickEnabled="True" ValueChanged="BreakSliderValueChanged" ToolTip="Train Break"/>
+        <Label x:Name="breakLabel" Content="Full Service" FontSize="72" Width="400" VerticalAlignment="Center" HorizontalContentAlignment="Left" ToolTip="Train Break Status" FontFamily="Segoe UI Semibold" Foreground="White"/>
     </StackPanel>
 </Window>

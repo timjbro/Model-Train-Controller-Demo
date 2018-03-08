@@ -8,17 +8,17 @@
              d:DesignHeight="60
              " d:DesignWidth="20">
     <UniformGrid Columns="1" Rows="3">
-        <Rectangle x:Name="rectForward" HorizontalAlignment="Left" Height="Auto" Width="20">
+        <Rectangle x:Name="rectForward" Height="Auto">
             <Rectangle.Fill>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="rectNeutral" HorizontalAlignment="Left" Height="Auto" Width="20">
+        <Rectangle x:Name="rectNeutral" Height="Auto">
             <Rectangle.Fill>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Rectangle x:Name="rectReverse" HorizontalAlignment="Left" Height="Auto" Width="20">
+        <Rectangle x:Name="rectReverse" Height="Auto">
             <Rectangle.Fill>
                 <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
             </Rectangle.Fill>
